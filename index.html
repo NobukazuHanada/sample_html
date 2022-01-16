@@ -1,0 +1,38 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>見出しH1</h1>
+
+        <button>スタート</button>
+
+        <img id="osyougatsu" src="image/osyougatsu_text_2022.png">
+        <style>
+            h1 {
+                color : red;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            body {
+                background-color: aqua;
+            }
+
+            button {
+                font-size: 50px;
+                position: absolute;
+                bottom: 30%;
+                left: 50%;
+            }
+        </style>
+
+        <script>
+            const osyougatu_image = document.getElementById("osyougatsu");
+            osyougatu_image.onclick = (e)=>{
+                console.log("click image");
+                osyougatu_image.remove();
+            };
+        </script>
+    </body>
+</html>
